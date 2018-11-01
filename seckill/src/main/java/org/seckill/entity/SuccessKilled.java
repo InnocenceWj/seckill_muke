@@ -1,0 +1,47 @@
+package org.seckill.entity;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class SuccessKilled extends SuccessKilledKey implements Serializable {
+    private Byte state;
+
+    private Date createTime;
+
+    private Seckill seckill;
+
+    private static final long serialVersionUID = 1L;
+
+    public Byte getState() {
+        return state;
+    }
+
+    public void setState(Byte state) {
+        this.state = state;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Seckill getSeckill() {
+        return seckill;
+    }
+
+    public void setSeckill(Seckill seckill) {
+        this.seckill = seckill;
+    }
+
+    @Override
+    public String toString() {
+        return "SuccessKilled{" +
+                "state=" + state +
+                ", createTime=" + createTime +
+                ", seckill=" + seckill +
+                '}';
+    }
+}
